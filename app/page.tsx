@@ -1,5 +1,6 @@
 "use client"
 
+import Image from "next/image";
 import { useState } from 'react'
 import { Dialog, DialogPanel } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
@@ -23,7 +24,7 @@ export default function Home() {
                 <div className="flex lg:flex-1">
                   <a href="#" className="-m-1.5 p-1.5">
                     <span className="sr-only">Your Company</span>
-                    <img
+                    <Image
                       alt=""
                       src="logo.png"
                       className="h-8 w-auto"
@@ -55,7 +56,7 @@ export default function Home() {
                   <div className="flex items-center justify-between">
                     <a href="#" className="-m-1.5 p-1.5">
                       <span className="sr-only">Your Company</span>
-                      <img
+                      <Image
                         alt=""
                         src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
                         className="h-8 w-auto"
@@ -137,7 +138,7 @@ export default function Home() {
             <h1 className="text-5xl font-semibold tracking-tight text-balance text-white sm:text-5xl mr-3 mt-[22px]">
               What is 
             </h1>
-            <img src="./white_logo.png" className="h-[70px] w-[170px]"></img>
+            <Image alt="" src="./white_logo.png" className="h-[70px] w-[170px]"></Image>
           </div>
           <p className="mt-8 text-lg max-w-[5xl] font-medium text-pretty text-white sm:text-xl/8">
           ReachOut is a hyperlocal on-demand service platform that connects users with verified professionals for household tasks such as cleaning, appliance repair, maintenance, and more—all within just 10 minutes. Our goal is to provide affordable, convenient, and high-quality solutions, ensuring that users no longer struggle with unreliable service providers or long wait times.
@@ -202,7 +203,7 @@ export default function Home() {
             <div className="lg:max-w-lg">
               <p className="text-base/7 font-semibold text-indigo-600">Why Us ?</p>
               <h1 className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
-              Fast, Reliable Home Services – Anytime, Anywhere
+              Fast, Reliable Home Services - Anytime, Anywhere
               </h1>
               <p className="mt-6 text-xl/8 text-gray-700">
               Need a quick fix? ReachOut connects you with trusted professionals for cleaning, repairs, and home maintenance—all within minutes!
@@ -211,7 +212,7 @@ export default function Home() {
           </div>
         </div>
         <div className="-mt-12 -ml-25 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
-          <img
+          <Image
             alt=""
             src="./clean.svg"
             className="w-[48rem] max-w-none  sm:w-[57rem]"
@@ -222,37 +223,37 @@ export default function Home() {
             <div className="max-w-xl text-base/7 text-gray-700 lg:max-w-lg">             
               <ul role="list" className="mt-8 space-y-8 text-gray-600">
                 <li className="flex gap-x-3">
-                <img alt="" src="list.png" className="mt-1 size-5 flex-none text-indigo-600" />
+                <Image alt="" src="list.png" className="mt-1 size-5 flex-none text-indigo-600" />
                   <span>
                     <strong className="font-semibold text-gray-900">Instant Access to Experts</strong> 
                   </span>
                 </li>
                 <li className="flex gap-x-3">
-                <img alt="" src="range.png" className="mt-1 size-5 flex-none text-indigo-600" />
+                <Image alt="" src="range.png" className="mt-1 size-5 flex-none text-indigo-600" />
                   <span>
                     <strong className="font-semibold text-gray-900">Wide Range of Services</strong> 
                   </span>
                 </li>
                 <li className="flex gap-x-3">
-                <img alt="" src="fast.png" className="mt-1 size-5 flex-none text-indigo-600" />
+                <Image alt="" src="fast.png" className="mt-1 size-5 flex-none text-indigo-600" />
                   <span>
                     <strong className="font-semibold text-gray-900">Quick & Hassle-Free Booking</strong> 
                   </span>
                 </li>
                 <li className="flex gap-x-3">
-                  <img alt="" src="tracking.png" className="mt-1 size-5 flex-none text-indigo-600" />
+                  <Image alt="" src="tracking.png" className="mt-1 size-5 flex-none text-indigo-600" />
                   <span>
                     <strong className="font-semibold text-gray-900">Real-Time Tracking</strong> 
                   </span>
                 </li>
                 <li className="flex gap-x-3">
-                <img alt="" src="cust.png" className="mt-1 size-5 flex-none text-indigo-600" />
+                <Image alt="" src="cust.png" className="mt-1 size-5 flex-none text-indigo-600" />
                 <span>
                     <strong className="font-semibold text-gray-900">Customer Satisfaction Guarantee</strong> 
                   </span>
                 </li>
                 <li className="flex gap-x-3">
-                <img alt="" src="price.png" className="mt-1 size-5 flex-none text-indigo-600" />
+                <Image alt="" src="price.png" className="mt-1 size-5 flex-none text-indigo-600" />
                   <span>
                     <strong className="font-semibold text-gray-900">Affordable & Transparent Pricing</strong> 
                   </span>
@@ -260,7 +261,7 @@ export default function Home() {
               </ul>
               <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">No service too small or too big for ReachOut..</h2>
               <p className="mt-6">
-              Whether it's a quick fix or routine maintenance, ReachOut connects you with trusted experts at a moment's notice.
+              Whether it&apos;s a quick fix or routine maintenance, ReachOut connects you with trusted experts at a moment&apos;s notice.
               Enjoy seamless service with real-time updates, customer satisfaction guarantees, and transparent pricing—all in one platform.
               </p>
             </div>
@@ -293,7 +294,7 @@ export default function Home() {
       </p>
     </div>
     <div className="absolute bottom-0 right-0 mb-4 mr-4 w-1/4">
-      <img
+      <Image
         alt="App screenshot"
         src="./angry1.svg"
         className="h-full w-full object-contain !block"
@@ -307,7 +308,7 @@ export default function Home() {
       <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
         <h2 className="text-center text-4xl font-semibold text-gray-400">What We Offer</h2>
         <p className="mx-auto mt-4 font-semibold max-w-[5xl] text-center  tracking-tight text-balance text-gray-950 text-[20px]">
-        Finding reliable service professionals shouldn't be a hassle. ReachOut connects you with verified experts for cleaning, repairs, and home maintenance—all within minutes. Our platform ensures fast, convenient, and trustworthy services at your doorstep.
+        Finding reliable service professionals shouldn&apos;t be a hassle. ReachOut connects you with verified experts for cleaning, repairs, and home maintenance—all within minutes. Our platform ensures fast, convenient, and trustworthy services at your doorstep.
         </p>
         <div className="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
           <div className="relative lg:row-span-2">
@@ -323,7 +324,7 @@ export default function Home() {
               </div>
               <div className="@container relative min-h-[30rem] w-full grow max-lg:mx-auto max-lg:max-w-sm">
                 <div className="absolute inset-x-10 top-10 bottom-0 overflow-hidden rounded-t-[12cqw] border-x-[3cqw] border-t-[3cqw] border-gray-700 bg-gray-900 shadow-2xl">
-                  <img
+                  <Image
                     className="size-full object-cover object-top"
                     src="./instant_service.jpg"
                     alt=""
@@ -346,7 +347,7 @@ export default function Home() {
               </div>
               <div className="flex flex-1 items-center justify-center px-8 max-lg:pt-10 max-lg:pb-12 sm:px-10 lg:pb-2">
                 <div className="max-w-xs w-full h-[200px] overflow-hidden">
-                  <img
+                  <Image
                     className="w-full h-full object-contain"
                     src="matching.svg"
                     alt="Smart Matching"
@@ -366,7 +367,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="@container flex flex-1 items-center max-lg:py-6 lg:pb-2">
-                <img
+                <Image
                   className="h-[min(152px,40cqw)] object-cover"
                   src="https://tailwindcss.com/plus-assets/img/component-images/bento-03-security.png"
                   alt=""
@@ -387,7 +388,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex-grow flex items-end justify-center">
-                <img src="experts.jpg" alt="" className="w-full object-contain" />
+                <Image src="experts.jpg" alt="" className="w-full object-contain" />
               </div>
             </div>
             <div className="pointer-events-none absolute inset-px rounded-lg ring-1 shadow-sm ring-black/5 max-lg:rounded-b-[2rem] lg:rounded-r-[2rem]"></div>
@@ -397,7 +398,7 @@ export default function Home() {
     </div>
 
     <div id="our-launch" className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32 flex justify-baseline h-screen">
-      <img
+      <Image
         alt=""
         src="./launch.svg"
         className="absolute bottom-0 right-0 -z-10 h-[500px] object-cover object-right md:object-center"
@@ -406,9 +407,9 @@ export default function Home() {
       <div className="max-w-5xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-3xl font-semibold tracking-tight text-white  sm:text-7xl"><span className="bg-[#1f75fe]">Launching Soon!</span><br></br>
-          <span className="text-[40px]">We'll be rolling out in major metro cities soon—stay tuned!</span></h2>
+          <span className="text-[40px]">We&apos;ll be rolling out in major metro cities soon—stay tuned!</span></h2>
           <p className="mt-8 text-lg font-medium text-pretty text-gray-300 sm:text-xl/8">
-          We're working hard to bring ReachOut to life! Our team is developing a seamless platform that will connect homeowners with trusted professionals for quick and reliable home services.
+          We&apos;re working hard to bring ReachOut to life! Our team is developing a seamless platform that will connect homeowners with trusted professionals for quick and reliable home services.
           </p>
         </div>
       </div>
